@@ -90,4 +90,21 @@ class SalesAnalyticsEngine {
 
         return Pair(startLmtd, endLmtd)
     }
+
+
+    /**
+     * Calculates the start and end Unix timestamps for the current For-The-Day (FTD).
+     */
+    fun getCurrentFTDRange(currentTimeMillis: Long = System.currentTimeMillis()): Pair<Long, Long> {
+        val calendar = java.util.Calendar.getInstance()
+        calendar.timeInMillis = currentTimeMillis
+
+        calendar.set(java.util.Calendar.HOUR_OF_DAY, 0)
+        calendar.set(java.util.Calendar.MINUTE, 0)
+        calendar.set(java.util.Calendar.SECOND, 0)
+        calendar.set(java.util.Calendar.MILLISECOND, 0)
+        val startFtd = calendar.timeInMillis
+
+        return Pair(startFtd, currentTimeMillis)
+    }
 }
