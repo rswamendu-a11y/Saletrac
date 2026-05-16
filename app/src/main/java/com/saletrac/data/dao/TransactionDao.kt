@@ -17,4 +17,13 @@ interface TransactionDao {
 
     @Query("SELECT * FROM transactions WHERE timestamp BETWEEN :startDate AND :endDate ORDER BY timestamp DESC")
     fun getTransactionsInRange(startDate: Long, endDate: Long): Flow<List<Transaction>>
+
+    @Query("SELECT SUM(price) FROM transactions WHERE timestamp BETWEEN :startDate AND :endDate")
+    fun getTotalValueForDateRange(startDate: Long, endDate: Long): Flow<Double?>
+
+    @Query("SELECT COUNT(*) FROM transactions WHERE timestamp BETWEEN :startDate AND :endDate")
+    fun getTotalVolumeForDateRange(startDate: Long, endDate: Long): Flow<Int>
+
+    @Query("SELECT * FROM transactions WHERE brand = :brand ORDER BY timestamp DESC")
+    fun getTransactionsByBrand(brand: String): Flow<List<Transaction>>
 }
