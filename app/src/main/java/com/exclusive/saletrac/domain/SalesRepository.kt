@@ -1,13 +1,13 @@
-package com.saletrac.domain
+package com.exclusive.saletrac.domain
 
-import com.saletrac.data.dao.TransactionDao
-import com.saletrac.data.entity.Transaction
-import com.saletrac.util.SalesAnalyticsEngine
+import com.exclusive.saletrac.data.dao.TransactionDao
+import com.exclusive.saletrac.data.entity.Transaction
+import com.exclusive.saletrac.util.SalesAnalyticsEngine
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class SalesRepository(
-    private val productCatalogDao: com.saletrac.data.dao.ProductCatalogDao,
+    private val productCatalogDao: com.exclusive.saletrac.data.dao.ProductCatalogDao,
     private val transactionDao: TransactionDao,
     private val analyticsEngine: SalesAnalyticsEngine
 ) {
@@ -49,7 +49,7 @@ class SalesRepository(
     // Assuming we also need product catalog DAO here for AutoComplete
     // Let's modify the repository to include product catalog
 
-    fun getAllProducts(): Flow<List<com.saletrac.data.entity.ProductCatalog>> {
+    fun getAllProducts(): Flow<List<com.exclusive.saletrac.data.entity.ProductCatalog>> {
         return productCatalogDao.getAllProducts()
     }
 }

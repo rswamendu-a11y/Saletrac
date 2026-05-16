@@ -1,4 +1,4 @@
-package com.saletrac.util
+package com.exclusive.saletrac.util
 
 import android.content.Context
 import com.itextpdf.kernel.colors.ColorConstants
@@ -11,7 +11,7 @@ import com.itextpdf.layout.element.Paragraph
 import com.itextpdf.layout.element.Table
 import com.itextpdf.layout.properties.TextAlignment
 import com.itextpdf.layout.properties.UnitValue
-import com.saletrac.data.entity.Transaction
+import com.exclusive.saletrac.data.entity.Transaction
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date

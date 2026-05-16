@@ -1,9 +1,9 @@
-package com.saletrac.ui
+package com.exclusive.saletrac.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.saletrac.domain.SalesRepository
-import com.saletrac.util.SalesAnalyticsEngine
+import com.exclusive.saletrac.domain.SalesRepository
+import com.exclusive.saletrac.util.SalesAnalyticsEngine
 
 class DashboardViewModelFactory(
     private val repository: SalesRepository,

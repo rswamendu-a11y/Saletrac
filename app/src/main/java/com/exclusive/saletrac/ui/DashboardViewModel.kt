@@ -1,10 +1,10 @@
-package com.saletrac.ui
+package com.exclusive.saletrac.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.saletrac.domain.SalesRepository
-import com.saletrac.util.CurrencyFormatter
-import com.saletrac.util.SalesAnalyticsEngine
+import com.exclusive.saletrac.domain.SalesRepository
+import com.exclusive.saletrac.util.CurrencyFormatter
+import com.exclusive.saletrac.util.SalesAnalyticsEngine
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine

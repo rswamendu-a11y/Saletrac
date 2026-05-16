@@ -1,4 +1,4 @@
-package com.saletrac.util
+package com.exclusive.saletrac.util
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

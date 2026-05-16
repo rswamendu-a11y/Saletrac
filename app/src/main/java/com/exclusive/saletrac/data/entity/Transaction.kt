@@ -1,4 +1,4 @@
-package com.saletrac.data.entity
+package com.exclusive.saletrac.data.entity
 
 import androidx.room.Entity
 import androidx.room.Index

@@ -1,4 +1,4 @@
-package com.saletrac.ui
+package com.exclusive.saletrac.ui
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -17,7 +17,7 @@ import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.utils.ColorTemplate
-import com.saletrac.R
+import com.exclusive.saletrac.R
 
 sealed class DashboardItem {
     data class Summary(val ftdValue: String, val mtdValue: String, val growthPercent: Double) : DashboardItem()

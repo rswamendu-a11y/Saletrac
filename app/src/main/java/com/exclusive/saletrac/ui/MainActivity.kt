@@ -1,8 +1,8 @@
-package com.saletrac.ui
+package com.exclusive.saletrac.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.saletrac.R
+import com.exclusive.saletrac.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

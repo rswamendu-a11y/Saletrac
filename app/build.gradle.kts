@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.saletrac"
+    namespace = "com.exclusive.saletrac"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.saletrac"
+        applicationId = "com.exclusive.saletrac"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -24,6 +24,7 @@ android {
 
     signingConfigs {
         getByName("debug") {
+            enableV1Signing = true
             enableV2Signing = true
             enableV3Signing = true
             enableV4Signing = true
@@ -32,6 +33,7 @@ android {
 
     buildTypes {
         getByName("debug") {
+            isDebuggable = true
             isZipAlignEnabled = true
             signingConfig = signingConfigs.getByName("debug")
         }

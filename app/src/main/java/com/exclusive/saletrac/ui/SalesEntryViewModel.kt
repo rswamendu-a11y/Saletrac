@@ -1,10 +1,10 @@
-package com.saletrac.ui
+package com.exclusive.saletrac.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.saletrac.data.entity.ProductCatalog
-import com.saletrac.data.entity.Transaction
-import com.saletrac.domain.SalesRepository
+import com.exclusive.saletrac.data.entity.ProductCatalog
+import com.exclusive.saletrac.data.entity.Transaction
+import com.exclusive.saletrac.domain.SalesRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

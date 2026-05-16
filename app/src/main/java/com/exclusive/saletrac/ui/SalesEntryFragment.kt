@@ -1,4 +1,4 @@
-package com.saletrac.ui
+package com.exclusive.saletrac.ui
 
 import android.os.Bundle
 import android.text.Editable
@@ -17,11 +17,11 @@ import com.google.mlkit.vision.barcode.BarcodeScannerOptions
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.barcode.common.Barcode
 import com.google.mlkit.vision.common.InputImage
-import com.saletrac.R
-import com.saletrac.data.AppDatabase
-import com.saletrac.databinding.FragmentSalesEntryBinding
-import com.saletrac.domain.SalesRepository
-import com.saletrac.util.SalesAnalyticsEngine
+import com.exclusive.saletrac.R
+import com.exclusive.saletrac.data.AppDatabase
+import com.exclusive.saletrac.databinding.FragmentSalesEntryBinding
+import com.exclusive.saletrac.domain.SalesRepository
+import com.exclusive.saletrac.util.SalesAnalyticsEngine
 import kotlinx.coroutines.launch
 
 class SalesEntryFragment : Fragment() {

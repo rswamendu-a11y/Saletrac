@@ -1,13 +1,13 @@
-package com.saletrac.data
+package com.exclusive.saletrac.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.saletrac.data.dao.ProductCatalogDao
-import com.saletrac.data.dao.TransactionDao
-import com.saletrac.data.entity.ProductCatalog
-import com.saletrac.data.entity.Transaction
+import com.exclusive.saletrac.data.dao.ProductCatalogDao
+import com.exclusive.saletrac.data.dao.TransactionDao
+import com.exclusive.saletrac.data.entity.ProductCatalog
+import com.exclusive.saletrac.data.entity.Transaction
 
 @Database(entities = [Transaction::class, ProductCatalog::class], version = 1, exportSchema = true)
 abstract class AppDatabase : RoomDatabase() {

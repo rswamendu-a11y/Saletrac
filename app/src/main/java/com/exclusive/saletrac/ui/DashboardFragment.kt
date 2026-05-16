@@ -1,4 +1,4 @@
-package com.saletrac.ui
+package com.exclusive.saletrac.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,10 +10,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.saletrac.data.AppDatabase
-import com.saletrac.databinding.FragmentDashboardBinding
-import com.saletrac.domain.SalesRepository
-import com.saletrac.util.SalesAnalyticsEngine
+import com.exclusive.saletrac.data.AppDatabase
+import com.exclusive.saletrac.databinding.FragmentDashboardBinding
+import com.exclusive.saletrac.domain.SalesRepository
+import com.exclusive.saletrac.util.SalesAnalyticsEngine
 import kotlinx.coroutines.launch
 
 class DashboardFragment : Fragment() {

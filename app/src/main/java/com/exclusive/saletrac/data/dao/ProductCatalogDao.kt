@@ -1,10 +1,10 @@
-package com.saletrac.data.dao
+package com.exclusive.saletrac.data.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.saletrac.data.entity.ProductCatalog
+import com.exclusive.saletrac.data.entity.ProductCatalog
 import kotlinx.coroutines.flow.Flow
 
 @Dao

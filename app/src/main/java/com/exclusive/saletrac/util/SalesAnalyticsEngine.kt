@@ -1,4 +1,4 @@
-package com.saletrac.util
+package com.exclusive.saletrac.util
 
 class SalesAnalyticsEngine {
 
