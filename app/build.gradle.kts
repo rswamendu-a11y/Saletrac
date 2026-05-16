@@ -16,9 +16,25 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters.addAll(listOf("arm64-v8a", "armeabi-v7a", "x86_64"))
+        }
+    }
+
+
+    signingConfigs {
+        getByName("debug") {
+            enableV2Signing = true
+            enableV3Signing = true
+            enableV4Signing = true
+        }
     }
 
     buildTypes {
+        getByName("debug") {
+            isZipAlignEnabled = true
+            signingConfig = signingConfigs.getByName("debug")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -48,6 +64,7 @@ dependencies {
     // Lifecycle components
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
     // Room Database
     val room_version = "2.6.1"
@@ -75,8 +92,4 @@ dependencies {
 
 ksp {
     arg("room.schemaLocation", "$projectDir/schemas")
-}
-
-dependencies {
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 }
