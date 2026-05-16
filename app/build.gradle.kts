@@ -76,3 +76,7 @@ dependencies {
 ksp {
     arg("room.schemaLocation", "$projectDir/schemas")
 }
+
+dependencies {
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+}

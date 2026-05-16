@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Saletrac</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="variant">Variant</string>
+    <string name="imei">IMEI</string>
+    <string name="imei_hint">Enter 15-digit IMEI</string>
+    <string name="price">Price</string>
+    <string name="cash_paid">Cash Paid</string>
+    <string name="card_paid">Card Paid</string>
+    <string name="finance_paid">Finance Paid</string>
+    <string name="finance_partner">Finance Partner (e.g., Bajaj)</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_phone">Customer Phone</string>
+    <string name="save_transaction">Save Transaction</string>
+    <string name="duplicate_imei_error">IMEI already exists in the database!</string>
+    <string name="imei_length_error">IMEI must be exactly 15 digits</string>
+
+    <string-array name="finance_partners">
+        <item>Bajaj</item>
+        <item>IDFC</item>
+        <item>HDB</item>
+        <item>TVS Credit</item>
+        <item>HDFC</item>
+    </string-array>
 </resources>

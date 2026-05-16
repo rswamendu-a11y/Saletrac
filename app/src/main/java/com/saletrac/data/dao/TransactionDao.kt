@@ -26,4 +26,8 @@ interface TransactionDao {
 
     @Query("SELECT * FROM transactions WHERE brand = :brand ORDER BY timestamp DESC")
     fun getTransactionsByBrand(brand: String): Flow<List<Transaction>>
+
+
+    @Query("SELECT EXISTS(SELECT 1 FROM transactions WHERE imei = :imei)")
+    suspend fun isImeiExists(imei: String): Boolean
 }

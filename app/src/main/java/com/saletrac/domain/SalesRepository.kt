@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class SalesRepository(
+    private val productCatalogDao: com.saletrac.data.dao.ProductCatalogDao,
     private val transactionDao: TransactionDao,
     private val analyticsEngine: SalesAnalyticsEngine
 ) {
@@ -37,5 +38,18 @@ class SalesRepository(
 
     fun calculateGrowth(currentPeriod: Double, previousPeriod: Double): Double {
         return analyticsEngine.calculateGrowth(currentPeriod, previousPeriod)
+    }
+
+
+    suspend fun isImeiExists(imei: String): Boolean {
+        return transactionDao.isImeiExists(imei)
+    }
+
+
+    // Assuming we also need product catalog DAO here for AutoComplete
+    // Let's modify the repository to include product catalog
+
+    fun getAllProducts(): Flow<List<com.saletrac.data.entity.ProductCatalog>> {
+        return productCatalogDao.getAllProducts()
     }
 }
