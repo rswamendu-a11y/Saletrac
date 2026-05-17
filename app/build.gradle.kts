@@ -22,6 +22,13 @@ android {
     }
 
 
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
     signingConfigs {
         getByName("debug") {
             enableV1Signing = true
